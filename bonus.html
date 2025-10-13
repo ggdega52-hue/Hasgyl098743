@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бонус 🎁</title>
+  <link rel="stylesheet" href="bonus.css">
+</head>
+<body>
+  <div class="container">
+    <h1></h1>
+    <div class="carousel">
+      <img id="carousel-image" src="img/1q.jpg" alt="Фото 1" class="fade">
+      <div class="carousel-controls">
+        <button onclick="prevImage()">← Назад</button>
+        <button onclick="nextImage()">Вперёд →</button>
+      </div>
+    </div>
+
+    <p class="hint"> 💖</p>
+    <a href="story.html" class="memory-btn">⬅ Назад</a>
+    <button onclick="window.location.href='qwe.html">
+    Продолжить
+    <div class="star-1">
+      <svg>
+        ...
+      </svg>
+    </div>
+    <div class="star-2">
+      <svg>
+        ...
+      </svg>
+    </div>
+     <div class="star-3">
+      <svg>
+        ...
+      </svg>
+    </div>
+    </button>
+  </div>
+
+  <script>
+    const images = [
+      "img/1p.jpg",
+      "img/2p.jpg",
+      "img/3p.jpg",
+      "img/4p.jpg",
+    ];
+
+    let currentIndex = 0;
+    const imgElement = document.getElementById("carousel-image");
+
+    function showImage(index) {
+      imgElement.classList.remove("show"); // плавно скрываем
+      setTimeout(() => {
+        imgElement.src = images[index];
+        imgElement.alt = "Фото " + (index + 1);
+        imgElement.classList.add("show"); // плавно показываем
+      }, 300); // задержка соответствует скорости анимации
+    }
+
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+    }
+
+    function prevImage() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(currentIndex);
+    }
+
+    // при загрузке делаем первое фото видимым
+    window.onload = () => {
+      imgElement.classList.add("show");
+    }
+  </script>
+</body>
+</html>

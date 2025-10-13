@@ -1,0 +1,171 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background: linear-gradient(135deg, #FFA500, #FFC0CB, #FFFACD);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+   background-attachment: fixed; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  overflow-x: hidden; 
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #ff4d88;
+  margin-bottom: 20px;
+  font-size: 1.6em;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.carousel img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; 
+}
+
+.carousel img.show {
+  opacity: 1;
+}
+
+.carousel-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-controls button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff6a9a, #ff4d88);
+  color: #fff;
+  transition: transform .1s ease, box-shadow .1s ease;
+
+}
+
+.carousel-controls button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(255,77,136,0.2);
+}
+
+.hint {
+  text-align: center;
+  margin: 15px 0;
+  color: #555;
+  font-size: 1em;
+}
+
+.memory-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #ff4d88;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+.memory-btn:hover {
+  background: #e60073;
+}
+
+/* 📱 адаптивность */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.3em;
+  }
+  .carousel-controls button {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+  .memory-btn {
+    font-size: 0.9em;
+    padding: 10px 20px;
+  }
+}
+
+
+
+button {
+  position: relative;
+  padding: 12px 35px;
+  background: #fec195;
+  font-size: 17px;
+  font-weight: 500;
+  color: #181818;
+  border: 3px solid #fec195;
+  border-radius: 8px;
+  box-shadow: 0 0 0 #fec1958c;
+  transition: all 0.3s ease-in-out;
+cursor: pointer;
+}
+
+.star-1 {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 25px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0.05, 0.43, 0.96);
+}
+
+.star-2 {
+ position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0, 0.4, 1.01); 
+}
+
+button:hover {
+  background: transparent;
+  color: #fec195;
+  box-shadow: 0 0 25px #fec1958c;
+}
+
+button:hover .star-1{
+position: absolute;
+  top: -80%;
+  left: -30%;
+  width: 25px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+.fi10 {
+  fill: #fffdef;
+}
