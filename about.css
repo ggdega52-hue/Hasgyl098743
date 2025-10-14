@@ -13,8 +13,9 @@ body {
   background-size: cover;
 color:white ;
 text-align: center;
-}
-
+ background-image: url(img/wer.jpg);
+   background-position: center;
+     overflow-x: hidden;
 }
 
 h1 {
