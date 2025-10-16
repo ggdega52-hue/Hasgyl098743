@@ -19,6 +19,7 @@ body {
   overflow-x: hidden;
 }
 
+
 @keyframes gradientFlow {
   0%{
     background-position: 0% 50%;
@@ -103,7 +104,7 @@ p {
   height: 100%;
   pointer-events: none;
   z-index: 9999;
-  background: url("img/wer.png") center/cover no-repeat;
+  background: url("img/0.png") center/cover no-repeat;
   opacity: 0.7;
 [  ] }
 
