@@ -1,4 +1,43 @@
 
+body {
+  margin: 0;
+  height: 100vh;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(270deg, #FFA500, #FFC0CB, #FFFACD);
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  background-repeat: no-repeat;
+  background-size: 600% 600%;
+  animation: gradientFlow 15s ease infinite;
+  color:white ;
+  background-position: center;
+  overflow-x: hidden;
+}
+
+
+@keyframes gradientFlow {
+  0%{
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
 *,
 *::before,
 *::after {
