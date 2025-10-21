@@ -1,15 +1,9 @@
 
 body {
-  margin: 0;
-  height: 100vh;
-  padding: 0;
-  display: flex;
-  justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(270deg, #FFA500, #FFC0CB, #FFFACD);
+  background: linear-gradient(135deg, #FFA500, #FFC0CB, #FFFACD);
   background-attachment: fixed;
-  font-family: Arial, sans-serif;
   background-repeat: no-repeat;
   background-size: 600% 600%;
   animation: gradientFlow 15s ease infinite;
@@ -49,10 +43,8 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #FFA500, #FFC0CB, #FFFACD); 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-   background-attachment: fixed; /* фон зафиксирован */
   background-repeat: no-repeat;
   background-size: cover; /* фон покрывает всю страницу */
   overflow-x: hidden; 
@@ -71,6 +63,7 @@ body {
   max-width: 720px;    /* не шире 720px на десктопе */
   background: #ffffff;
   margin: 20px auto;
+  text-align: center;
   padding: 22px;
   border-radius: 12px;
   box-shadow: 0 8px 26px rgba(0,0,0,0.08);
@@ -90,6 +83,11 @@ p {
   font-size: clamp(1rem, 2.6vw, 1.05rem);
   max-width: 60ch;              /* ограничивает ширину строки для удобного чтения */
   overflow-wrap: break-word;    /* переносит длинные слова */
+}
+
+img {
+ text-align: center;
+ border-radius: 50px; 
 }
 
 .memory-btn{
