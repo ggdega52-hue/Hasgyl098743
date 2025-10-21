@@ -138,6 +138,40 @@ transform: translateY(0);
   }
 }
 
+.button-secret {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #FFFACD;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: 0.3s;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.25 );
+}
+
+.button-secret:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+.hidden-message {
+  display: none;
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
+  background: #FFC0CB;
+  color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  max-width: 250px;
+  font-size: 0.95em;
+}
+
+
 
 
 

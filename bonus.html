@@ -18,6 +18,9 @@
     </div>
     <a href="story.html" class="memory-btn">⬅ Назад</a>
     <a href="https://ggdega52-hue.github.io/galeru1" class="memory-btn">Продолжить</a>
+    <br>
+     <button class="button-secret" onclick="toggleMessage()">...</button>
+      <div class="hidden-message" id="secret"> <img src="img/2222.jpg" width="150" height="175"></div>
   <script>
     const images = [
       "img/1p.jpg",
@@ -52,6 +55,10 @@
     window.onload = () => {
       imgElement.classList.add("show");
     }
+    function toggleMessage() {
+  const msg = document.getElementById('secret');
+  msg.style.display = (msg.style.display === 'block') ? 'none' : 'block';
+}
   </script>
 </body>
 </html>
